@@ -1,0 +1,57 @@
+BANK CUSTOMER CHURN — EDA REPORT
+========================================
+Rows: 10000
+Columns: 14
+Duplicate rows removed: 0
+Missing values remaining in source columns: 0
+Churned customers: 2037
+Retained customers: 7963
+Overall churn rate: 20.37%
+
+CHURN BY CATEGORICAL FEATURES
+
+Geography:
+Geography      mean  count
+   France 16.154767   5014
+  Germany 32.443204   2509
+    Spain 16.673395   2477
+
+Gender:
+Gender      mean  count
+Female 25.071539   4543
+  Male 16.455928   5457
+
+IsActiveMember:
+ IsActiveMember      mean  count
+              0 26.850897   4849
+              1 14.269074   5151
+
+HasCrCard:
+ HasCrCard      mean  count
+         0 20.814941   2945
+         1 20.184266   7055
+
+NumOfProducts:
+ NumOfProducts       mean  count
+             1  27.714398   5084
+             2   7.581699   4590
+             3  82.706767    266
+             4 100.000000     60
+
+NUMERICAL MEANS BY CUSTOMER STATUS
+ChurnStatus           Churned      Retained
+Year             2.025000e+03  2.025000e+03
+CustomerId       1.569005e+07  1.569117e+07
+CreditScore      6.453515e+02  6.518532e+02
+Age              4.483800e+01  3.740839e+01
+Tenure           4.932744e+00  5.033279e+00
+Balance          9.110854e+04  7.274530e+04
+NumOfProducts    1.475209e+00  1.544267e+00
+HasCrCard        6.990673e-01  7.071455e-01
+IsActiveMember   3.608247e-01  5.545649e-01
+EstimatedSalary  1.014657e+05  9.973839e+04
+Exited           1.000000e+00  0.000000e+00
+
+Interpretation note:
+Differences are descriptive associations, not proof of causation.
+Use held-out model results and business validation before decisions.
